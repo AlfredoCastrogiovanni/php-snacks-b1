@@ -27,10 +27,7 @@
         <?php foreach($matches as $match) { ?>
             <li>
                 <?php
-                    echo $match["team1"] . " - ";
-                    echo $match["team2"] . " | ";
-                    echo $match["score1"] . " - ";
-                    echo $match["score2"] . " ";
+                    echo $match["team1"] . " - " . $match["team2"] . " | " . $match["score1"] . "-" . $match["score2"];
                 ?>
             </li>
         <?php } ?>
