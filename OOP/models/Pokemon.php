@@ -6,13 +6,15 @@
         public $weight;
         public $height;
         public $level;
+        public $category;
 
-        public function __construct(String $name, String $genre, Float $weight, Float $height, Int $level) {
+        public function __construct(String $name, String $genre, Float $weight, Float $height, Int $level, Category $category) {
             $this->name = $name;
             $this->genre = $genre;
             $this->weight = $weight;
             $this->height = $height;
             $this->level = $level;
+            $this->category = $category;
         }
 
         public function getName() {

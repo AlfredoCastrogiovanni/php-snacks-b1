@@ -2,7 +2,7 @@
     require_once __DIR__ . '/models/Pokemon.php';
     require_once __DIR__ . '/models/Category.php';
 
-    $Pokemon1 = new Pokemon('pino', 'maschio', 3, 1.20,20 );
+    $Pokemon1 = new Pokemon('pino', 'maschio', 3, 1.20, 20, new Category('Fire'));
 
     $Pokemons = [$Pokemon1, $Pokemon1, $Pokemon1 ];
 ?>
@@ -38,6 +38,7 @@
                             <p class="card-text">Genre: <?php $pokemon->getGenre(); ?></p>
                             <p class="card-text">Weight: <?php $pokemon->getWeight(); ?></p>
                             <p class="card-text">Height: <?php echo $pokemon->height; ?></p>
+                            <p class="card-text">Category: <?php echo $pokemon->category->name; ?></p>
                         </div>
                     </div>
                 </div>
