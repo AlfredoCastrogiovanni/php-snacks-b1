@@ -7,7 +7,7 @@
         public $height;
         public $level;
 
-        public function __construct(String $name, String $genre, Float $weight, Float $height, Int $level,) {
+        public function __construct(String $name, String $genre, Float $weight, Float $height, Int $level) {
             $this->name = $name;
             $this->genre = $genre;
             $this->weight = $weight;

@@ -29,17 +29,19 @@
     <main>
         <div class="container">
             <div class="row">
+                <?php foreach($Pokemons as $pokemon) { ?>
                 <div class="col-4">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
+                            <h5 class="card-title"><?php $pokemon->getname(); ?></h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">level: <?php echo $pokemon->level; ?></h6>
+                            <p class="card-text">Genre: <?php $pokemon->getGenre(); ?></p>
+                            <p class="card-text">Weight: <?php $pokemon->getWeight(); ?></p>
+                            <p class="card-text">Height: <?php echo $pokemon->height; ?></p>
                         </div>
                     </div>
                 </div>
+                <?php } ?>
             </div>
         </div>
     </main>
